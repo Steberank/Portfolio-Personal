@@ -22,7 +22,7 @@ const handleCopyEmail = () => {
 
   if (isMobile) {
     const textArea = document.createElement("textarea");
-    textArea.value = "scalzodan04@gmail.com";
+    textArea.value = "scalzodan04@hotmail.com";
     document.body.appendChild(textArea);
     textArea.select();
     try {
@@ -33,7 +33,7 @@ const handleCopyEmail = () => {
     document.body.removeChild(textArea);
   } else {
     // Copia moderna + popup personalizado solo en escritorio
-    navigator.clipboard.writeText("scalzodan04@gmail.com");
+    navigator.clipboard.writeText("scalzodan04@hotmail.com");
     setPopupVisible(true);
     setTimeout(() => {
       setPopupVisible(false);
@@ -91,7 +91,7 @@ const handleCopyEmail = () => {
         <div className="contact-buttons">
           <BotonContacto
             logo={mailLogo}
-            texto="scalzodan04@gmail.com"
+            texto="scalzodan04@hotmail.com"
             onClick={handleCopyEmail}
           />
 
