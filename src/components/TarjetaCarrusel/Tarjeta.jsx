@@ -1,4 +1,4 @@
-import './tarjeta.css';
+import './Tarjeta.css';
 import '../../i18n/i18n.js';
 import { useTranslation } from 'react-i18next';
 
