@@ -1,0 +1,15 @@
+{
+  "btn1": "About Me",
+  "btn2": "Projects",
+  "btn3": "Contact Me",
+  "antesNombre": "Hey! I'm",
+  "nombre": "Dan Stephano Scalzo.",
+  "despuesNombre": "I am a student of the 'University Technician in Programming' program at the National Technological University of Mar Del Plata (UTN). ",
+  "resaltado": "On this page, you can view my skills, projects, or contact me.",
+
+  "iniciar": "Start",
+  "codigofuente": "Source Code",
+
+  "contacto": "Contact Me",
+  "popup": "Copied to Clipboard!"
+}

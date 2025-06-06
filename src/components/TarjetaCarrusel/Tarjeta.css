@@ -1,0 +1,110 @@
+.tarjeta {
+  width: 520px;
+  height: 500px;
+  background-color: #111827;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(108, 117, 125, 0.2);
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 auto; 
+  color: white;
+  margin: 0 10px;
+  border: 2px solid rgb(108, 117, 125);
+}
+
+.tarjeta-img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  background-color: #6c757d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tarjeta-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* 🔁 Distribuye título/desc arriba y botón secundario abajo */
+  padding: 1rem;
+  position: relative;
+}
+
+/* Título con espacio para botón verde */
+.tarjeta-titulo {
+  font-size: 1.2rem;
+  margin: 0;
+  font-weight: bold;
+  padding-right: 30%; /* evita que el título se solape con el botón verde */
+}
+
+/* Descripción */
+.tarjeta-descripcion {
+  font-size: 0.95rem;
+  line-height: 1.3;
+  color: #e5e7eb;
+  margin-top: 0.5rem;
+}
+
+/* Botón verde arriba a la derecha */
+.boton-primario {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 25%;
+  background-color: #198754;
+  color: white;
+  padding: 0.4rem 0;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s;
+  font-size: 0.9rem;
+}
+
+.boton-primario:hover {
+  background-color: #157347;
+}
+
+/* Contenedor solo para el botón inferior */
+.tarjeta-botones {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 1rem;
+}
+
+/* Botón secundario al fondo */
+.boton-secundario {
+  width: 100%;
+  background-color: transparent;
+  color: #6c757d;
+  border: 1px solid #6c757d;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.boton-secundario:hover {
+  background-color: #6c757d;
+  color: #343a40;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+@media (max-width: 768px) {
+  .tarjeta {
+    width: 90%;        /* Ocupa el 90% del ancho del contenedor */
+    height: auto;      /* Altura automática para que se adapte al contenido */
+  }
+
+  .tarjeta-img {
+    height: 200px;     /* Opcional: reduce la imagen en pantallas pequeñas */
+  }
+
+  .boton-primario {
+    width: auto;       /* Que no se corte en móviles */
+    padding: 0.4rem 1rem;
+  }
+}

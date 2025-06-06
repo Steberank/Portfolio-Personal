@@ -1,0 +1,176 @@
+* {
+  font-family: system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji';
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.top-strip {
+  width: 100%;
+  height: 30px;
+  background-color: #52c586;
+  position: relative; /* Se comporta como un elemento normal en el flujo del documento */
+  top: 0px;
+  left: 0px;
+  z-index: 101; /* Leve prioridad sobre otros elementos si hace falta */
+}
+ 
+.introduccion{
+  padding-top: 10px;
+  font-size: 3rem;
+  font-weight: bolder;
+  color: rgba(17,24,39);
+  letter-spacing: -3px;
+
+  text-align: justify;
+  justify-content: center;
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.nombre{
+  color: #52c586;
+}
+
+.despuesNombre{
+  font-weight: 600;
+}
+
+.div-proyectos {
+  width: 100%;
+  min-height: 750px;
+  background-color: #111827;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;    
+  position: relative;
+  padding: 2rem 1rem;     
+}
+
+.tarjeta-titulo-contenedor {
+  font-size: 4rem;
+  font-weight: bolder;
+  color: white;
+  letter-spacing: -3px;
+  text-align: center;
+  margin-bottom: 3rem; 
+}
+
+.tarjetas {
+  display: flex;
+  flex-wrap: wrap;          /* Permite que bajen de línea */
+  justify-content: center;  /* Centra horizontalmente */
+  gap: 2rem;                /* Espacio entre tarjetas */
+  width: 100%;
+}
+
+.contact-section {
+  padding: 2rem;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+.contact-title {
+  font-size: 4rem;
+  font-weight: bolder;
+  letter-spacing: -3px;
+  margin-bottom: 3rem;
+  color: #333;
+}
+
+.contact-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+}
+
+.popup {
+  position: fixed;
+  bottom: 30px;       /* posición desde abajo */
+  left: 0;            /* izquierda en 0 */
+  right: 0;           /* derecha en 0 */
+  margin: 0 auto;     /* margen automático */
+  width: max-content; /* ancho del contenido */
+  max-width: 90vw;    /* para que no se desborde en pantallas chicas */
+  
+  background-color: #007a5c;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  font-size: 0.95rem;
+  animation: fadeInOut 3s ease forwards;
+}
+
+.footer {
+  background-color: #e0e0e0;
+  color: #111827;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  font-weight: bolder;
+  width: 100%;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  90% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+@media (max-width: 789px) {
+  .introduccion{
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    max-width: 90%;
+    letter-spacing: -1px;
+    color: rgba(17,24,39);
+  }
+
+  .despuesNombre{
+    font-weight: normal;
+  }
+
+  .tarjeta-titulo-contenedor{
+    font-size: 2.3rem;
+  }
+
+  .contact-title{
+    font-size: 2.3rem;
+  }
+
+  .tarjetas {
+    flex-direction: column;
+    align-items: center;
+  }
+}
